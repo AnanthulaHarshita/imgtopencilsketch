@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Pencil Sketch App</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+     <h1 style="text-align: center;">Image to Pencil Sketch App</h1>
+    <p style="text-align: center;">Upload an image to convert it to a pencil sketch</p>
+
+    <!-- Form to upload image -->
+    <form id="upload-form" enctype="multipart/form-data" style="text-align: center;">
+        <input type="file" id="image-input" name="image" required />
+        <button type="submit">Upload Image</button> <!-- Changed 'uploadbtn' to 'submit' -->
+    </form>
+
+    <!-- Upload status -->
+    <div id="upload-status"></div> <!-- This will show success or error message -->
+
+    <!-- Display uploaded image -->
+    <div id="image-container">
+        <img id="uploaded-image" src="" alt="Uploaded Image">
+    </div>
+
+        <!-- Add a new form to generate sketch -->
+    <form id="generate-sketch-form" method="post" enctype="multipart/form-data" style="text-align: center;">
+        <button type="submit">Generate Sketch</button>
+    </form>
+
+    <!-- Add a new div to display the generated sketch -->
+    <div id="sketch-container">
+        <img id="sketch-image" src="" alt="Generated Sketch">
+    </div>
+
+
+
+    <script src="jscript.js"></script> <!-- External JavaScript -->
+</body>
+</html>

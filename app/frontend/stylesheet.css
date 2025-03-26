@@ -1,0 +1,76 @@
+/* stylesheet.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+
+}
+
+h1 {
+    color: #00698f;
+}
+
+h2 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#upload-form {
+    margin-top: 20px;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; /* add this rule to make the box a block element */
+    margin: 0 auto; /* add this rule to center the box */
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#image-input {
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 50%;
+    height: 40px;
+    background-color: #00698f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0088cc;
+}
+
+#upload-status {
+    margin-top: 20px;
+    color: #666;
+}
+img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#sketch-container {
+    display: none;
+}
+
+#sketch-image {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+}
